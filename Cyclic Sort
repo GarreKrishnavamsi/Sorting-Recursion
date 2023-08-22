@@ -12,7 +12,7 @@ public class ip {
 		 static void cyclic(int[] arr) {
 			 int i=0;
 			 while(i<arr.length) {
-				 int pre = arr[i]-1;
+				 int pre = arr[i]-1; #-----> Here we will use pre = arr[i] if the arr contains zero
 				 if(arr[pre]!=arr[i]) {
 					 swap(arr,i,pre);
 				 }
