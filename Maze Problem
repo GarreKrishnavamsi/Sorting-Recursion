@@ -1,0 +1,17 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	   System.out.println(mazeProb(3,3));
+	    
+
+	}
+	static int mazeProb(int row,int col){
+	    if(row==1 || col==1){
+	        return 1;
+	    }
+	    int left = mazeProb(row-1,col);
+	    int right = mazeProb(row,col-1);
+	    return left+right;
+	}
+}
